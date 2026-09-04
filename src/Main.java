@@ -21,10 +21,12 @@ public class Main {
 
         estudiante1.mostrarInformacion();
 
-        if(edad>=18){
-            System.out.println("Acceso Autorizado.");
-        } else {
-            System.out.println("Acceso Restingido.");
+        if(edad<18){
+            System.out.println("Estudiante menor de edad.");
+        } else if (edad<25) {
+            System.out.println("Estudiante Joven");
+        }else{
+            System.out.println("Estudiante adulto.");
         }
     }
 
