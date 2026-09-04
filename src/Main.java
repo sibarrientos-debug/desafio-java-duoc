@@ -7,7 +7,6 @@ public class Main {
 
         Estudiante estudiante= new Estudiante("Ana","Ingenería en Informática",20);
         estudiante.mostrarInformacion();
-    }
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese nombre: ");
@@ -18,10 +17,17 @@ public class Main {
 
         System.out.print("Ingrese edad: ");
         int edad = scanner.nextInt();
-        Estudiante estudiante = new Estudiante(nombre, carrera, edad);
+        Estudiante estudiante1 = new Estudiante(nombre, carrera, edad);
 
-        estudiante.mostrarInformacion();
+        estudiante1.mostrarInformacion();
+
+        if(edad>=18){
+            System.out.println("Acceso Autorizado.");
+        } else {
+            System.out.println("Acceso Restingido.");
+        }
     }
+
 }
 
 
