@@ -28,6 +28,15 @@ public class Main {
         }else{
             System.out.println("Estudiante adulto.");
         }
+
+        for(int i=1;i<=5;i++){
+            System.out.println("Procesando estudiante" +i);
+
+        }
+
+        for (int contador = 1; contador <=5; contador++) {
+            System.out.println("Procesando registro " + contador);
+        }
     }
 
 }
