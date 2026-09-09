@@ -37,6 +37,24 @@ public class Main {
         for (int contador = 1; contador <=5; contador++) {
             System.out.println("Procesando registro " + contador);
         }
+        int opcion=1;
+        while(opcion!=0){
+            System.out.println("===SISTEMA DUOC===");
+            System.out.println("1.Mostrar estado");
+            System.out.println("1. Procesar operación");
+            System.out.println("0. Salir");
+
+            System.out.println("Seleccione una opción: ");
+            opcion= scanner.nextInt();
+
+            if(opcion==1){
+                System.out.println("Sistema operativo.");
+            } else if (opcion==2){
+                System.out.println("Procesanto operacion...");
+            } else if(opcion==0){
+                System.out.println(("Cerrando sistema..."));
+            }
+        }
     }
 
 }
